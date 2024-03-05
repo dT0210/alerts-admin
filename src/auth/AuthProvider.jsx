@@ -14,7 +14,7 @@ const AuthProvider = ({children}) => {
                 formData.append(key, data[key]);
             }
             
-            const response = await fetch("https://iotdog-alerts.cloudns.be/api/authenticate.php", {
+            const response = await fetch("http://iotdog-alerts.cloudns.be/api/authenticate.php", {
                 method: "POST",
                 body: formData,
             });

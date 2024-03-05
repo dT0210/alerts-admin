@@ -11,7 +11,7 @@ function Dashboard() {
     useEffect(() => {
         async function fetchAlerts() {
             try {
-                const response = await fetch(`https://iotdog-alerts.cloudns.be/api/getAlerts.php?user=${user.UserId}`, {
+                const response = await fetch(`http://iotdog-alerts.cloudns.be/api/getAlerts.php?user=${user.UserId}`, {
                     method: "GET",
                 });
                 const res = await response.json();
